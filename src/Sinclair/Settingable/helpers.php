@@ -1,13 +1,13 @@
 <?php
 
-if ( !function_exists('settingable') )
+if ( !function_exists('setting') )
 {
     /**
      * @param $args
      *
      * @return \Sinclair\Settingable\Contracts\Settingable|bool|mixed
      */
-    function settingable( $args = null )
+    function setting( $args = null )
     {
         if ( is_string($args) )
             return app('Settingable')->get($args);
