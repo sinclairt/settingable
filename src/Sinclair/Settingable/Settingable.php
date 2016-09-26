@@ -2,8 +2,6 @@
 
 namespace Sinclair\Settingable;
 
-use Sinclair\Settingable\Contracts\Setting;
-
 /**
  * Class Settingable
  * @package Sinclair\Settingable
@@ -18,9 +16,9 @@ class Settingable implements Contracts\Settingable
     /**
      * Settable constructor.
      *
-     * @param Setting $setting
+     * @param Contracts\Setting $setting
      */
-    public function __construct( Setting $setting )
+    public function __construct( Contracts\Setting $setting )
     {
         $this->setting = $setting;
     }
@@ -123,11 +121,11 @@ class Settingable implements Contracts\Settingable
 
     /**
      * @param $value
-     * @param Setting $setting
+     * @param Contracts\Setting $setting
      *
      * @return mixed
      */
-    protected function update( $value, Setting $setting )
+    protected function update( $value, Contracts\Setting $setting )
     {
         $setting->update(compact('value'));
 
