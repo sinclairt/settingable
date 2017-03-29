@@ -1,12 +1,12 @@
 {
-  "name": "sinclair/settingable",
+  "name": "sinclairt/settingable",
   "description": "Store settings for an app or resource in the database",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
       "name": "Tom Sinclair",
-      "email": "tom@wtbi.co"
+      "email": "tom.sinclair31@gmail.com"
     }
   ],
   "minimum-stability": "stable",
@@ -29,12 +29,6 @@
   "scripts": {
     "phpunit": "./vendor/bin/phpunit;"
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://satis.ominor.co.uk"
-    }
-  ],
   "config": {
     "preferred-install": "dist"
   }
